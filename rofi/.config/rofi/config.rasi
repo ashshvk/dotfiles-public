@@ -1,0 +1,12 @@
+configuration{
+    display-drun: "    Run  ";
+    modi: "drun";
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    hide-scrollbar: false;
+    sidebar-mode: false;
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+
+@theme "~/.config/rofi/themes/cat.rasi"

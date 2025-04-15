@@ -36,7 +36,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun -themes ~/.config/rofi/themes/purpleglow.rasi
+bindsym $mod+d exec --no-startup-id rofi -show drun -themes ~/.config/rofi/themes/cat.rasi
 
 # change focus
 bindsym $mod+h focus left
@@ -169,7 +169,7 @@ gaps outer 5
 for_window [class=".*"] border pixel 2 
 
 #Powermenu
-bindsym Mod4+e exec ~/.config/rofi/scripts/powermenu.sh
+bindsym Mod4+e exec ~/.config/rofi/powermenu.sh
 
 #Screenshot
 bindsym $mod+Shift+s exec --no-startup-id maim ~/Pictures/Screenshots/$(date).png
