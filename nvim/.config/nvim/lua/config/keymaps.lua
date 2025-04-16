@@ -30,3 +30,4 @@ map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" }) vim.keymap.set("n"
 -- Diable continuations
 -- vim.keymap.set("n", "<Leader>o", "o<Esc>^Da", opts)
 -- vim.keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)
+
