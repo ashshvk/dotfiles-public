@@ -1,4 +1,4 @@
-set $mod Mod1
+set $mod Mod4
 
 font pango:Hack Nerd Font 8 
 exec_always feh --bg-scale Pictures/Wallpapers/Anime-Purple-eyes-gurl.png
@@ -166,7 +166,7 @@ gaps outer 5
 for_window [class=".*"] border pixel 2 
 
 #Powermenu
-bindsym Mod4+e exec ~/.config/rofi/powermenu.sh
+bindsym Mod1+e exec ~/.config/rofi/powermenu.sh
 
 #Screenshot
 bindsym $mod+Shift+s exec --no-startup-id maim ~/Pictures/Screenshots/$(date).png
