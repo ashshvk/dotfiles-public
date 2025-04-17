@@ -20,6 +20,7 @@ element-text, element-icon , mode-switcher {
 
 window {
     border-color: @mauve;
+    border-radius: 22;
     border: 2px solid;
     background-color: @bg-col;
 }
