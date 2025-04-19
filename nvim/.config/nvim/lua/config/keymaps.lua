@@ -10,10 +10,10 @@ map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Insert Navigation
-map("i", "<D-h>", "<Left>", { noremap = true })   -- Win + h = move left
-map("i", "<D-l>", "<Right>", { noremap = true })  -- Win + l = move right
-map("i", "<D-j>", "<Down>", { noremap = true })   -- Win + j = move down
-map("i", "<D-k>", "<Up>", { noremap = true })     -- Win + k = move u
+-- map("i", "<D-h>", "<Left>", { noremap = true })   -- Win + h = move left
+-- map("i", "<D-l>", "<Right>", { noremap = true })  -- Win + l = move right
+-- map("i", "<D-j>", "<Down>", { noremap = true })   -- Win + j = move down
+-- map("i", "<D-k>", "<Up>", { noremap = true })     -- Win + k = move u
 
 -- fzf
 -- vim.keymap.set("n", "<leader>ff", function() require("fzf-lua").files() end, { desc = "Find Files" })
