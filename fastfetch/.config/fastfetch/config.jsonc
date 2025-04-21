@@ -32,12 +32,7 @@
         },
         {
             "type": "memory",
-            "key": "│ ├󰍛",
-            "keyColor": "green"
-        },
-        {
-            "type": "disk",
-            "key": "└ └",
+            "key": "└ └󰍛",
             "keyColor": "green"
         },
         {
@@ -52,29 +47,23 @@
         {
             "type": "os",
             "key": " OS",
-            "keyColor": "yellow"
+            "keyColor": "blue"
         },
         {
             "type": "kernel",
             "key": "│ ├",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "bios",
-            "key": "│ ├",
-            "keyColor": "yellow"
+            "keyColor": "blue"
         },
         {
             "type": "packages",
             "key": "│ ├󰏖",
-            "keyColor": "yellow"
+            "keyColor": "blue"
         },
         {
             "type": "shell",
-            "key": "└ └",
-            "keyColor": "yellow"
+            "key": "│ ├",
+            "keyColor": "blue"
         },
-        "break",
         {
             "type": "de",
             "key": " DE",
