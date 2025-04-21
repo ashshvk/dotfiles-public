@@ -12,7 +12,7 @@
 )
 
 (defalias
-  escctrl (tap-hold 100 100 esc lctl)
+  caps esc
   a (multi f24 (tap-hold $tap-time $hold-time a lmet))
   s (multi f24 (tap-hold $tap-time $hold-time s lalt))
   d (multi f24 (tap-hold $tap-time $hold-time d lsft))
@@ -24,5 +24,5 @@
 )
 
 (deflayer base
-  @escctrl @a @s @d @f @j @k @l @;
+  @caps @a @s @d @f @j @k @l @;
 )
