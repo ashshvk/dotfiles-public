@@ -28,3 +28,5 @@ end
 
 
 set -g fish_greeting ""
+
+set -gx PATH $HOME/Qt6.8/bin $PATH
