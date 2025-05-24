@@ -21,13 +21,21 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 -- map("n", "<leader>/", "<cmd>FzfLua live_grep<CR>", { desc = "Live Grep" })
 -- map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>", { desc = "Open Buffers" })
 
+-- tabs -- 
+map("n", "te", ":tabedit")
 
--- example -- 
-map("n", "<tab>", ":tabnext<Return>", opts)
-map("n", "<s-tab>", ":tabprev<Return>", opts)
-map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" }) vim.keymap.set("n", "<leader>bl", ":ls<CR>", { desc = "List buffers" })
+-- buffer --
+map("n", "<tab>", ":bnext<CR>", opts)
+map("n", "<s-tab>", ":bprev<CR>", opts)
+map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" }) 
+map("n", "<leader>bl", ":ls<CR>", { desc = "List buffers" })
 
+-- Split Window
+map("n", "ss", ":split<Return>", opts)
+map("n", "sv", ":vsplit<Return>", opts)
 -- Diable continuations
 -- vim.keymap.set("n", "<Leader>o", "o<Esc>^Da", opts)
 -- vim.keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)
+
+ 
 

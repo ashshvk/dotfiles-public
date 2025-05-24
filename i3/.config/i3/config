@@ -1,7 +1,7 @@
 set $mod Mod4
 
 font pango:Hack Nerd Font 8 
-exec_always feh --bg-scale ~/.wallpaper/redflower.png
+exec_always feh --bg-scale ~/.wallpaper/purple-gurl.png
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom 
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080
@@ -37,7 +37,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun -themes ~/.config/rofi/themes/cat.rasi
+bindsym Mod1+space exec --no-startup-id rofi -show drun -themes ~/.config/rofi/themes/cat.rasi
 
 # change focus
 bindsym $mod+h focus left
@@ -165,16 +165,14 @@ bindsym --release $mod+Shift+x exec "i3lock"
 gaps inner 5
 gaps outer 5
 for_window [class=".*"] border pixel 0
+hide_edge_borders both
 
 #Powermenu
 bindsym Mod1+e exec ~/.config/rofi/powermenu.sh
 
 #Screenshot
-bindsym $mod+Shift+s exec --no-startup-id maim ~/Pictures/Screenshots/$(date).png
+bindsym $mod+Shift+s exec --no-startup-id maim ~/Pictures/Screenshots/$(date).png && notify-send "Screenshot Taken" "Saved as screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png"
 bindsym Ctrl+Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
-hide_edge_borders both
 
-# keymap xmodmap
-# exec --no-startup-id xmodmap ~/.Xmodmap
-
+# keymap Kanata
 exec --no-startup-id kanata --cfg ~/.config/kanata/kanata.kbd
