@@ -20,8 +20,8 @@ element-text, element-icon , mode-switcher {
 
 window {
     border-color: @mauve;
-    border-radius: 22;
-    border: 2px solid;
+    border-radius: 0;
+    border: 1px solid;
     background-color: @bg-col;
 }
 
@@ -33,14 +33,14 @@ mainbox {
 inputbar {
     children: [prompt,entry];
     background-color: @bg-col;
-    border-radius: 5px;
+    border-radius: 0px; 
 }
 
 prompt {
     background-color: @mauve;
     padding: 5px;
     text-color: @bg-col;
-    border-radius: 3px;
+    border-radius: 0px;
   	margin: 0px 5px 0px 0px;
   	horizontal-align: 0.5;
   	vertical-align: 0.5;
@@ -83,7 +83,7 @@ element-icon {
 
 element selected.normal {
     background-color:  @mauve;
-    border-radius: 10px;
+    border-radius: 0px;
     text-color: @bg-col;
 }
 

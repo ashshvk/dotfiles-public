@@ -1,10 +1,10 @@
 #! /usr/bin/bash
-chosen=$(printf "Power Off\nRestart\nLock" | rofi -dmenu -i -theme-str 'entry { enabled: false; } prompt { enabled: false; } inputbar { enabled: false; } listview { lines: 3; }') 
+chosen=$(printf "Lock\nPower Off\nRestart\nLogout" | rofi -dmenu -i -theme-str 'entry { enabled: false; } prompt { enabled: false; } inputbar { enabled: false; } listview { lines: 4; }') 
 
 case "$chosen" in
-  "Power Off") poweroff ;;
-  "Restart") reboot ;;
-  "Lock") slock ;;
-  *) exit 1 ;;
+  "Lock") i3lock ;;
+  "Power Off") systemctl poweroff ;;
+  "Restart") systemctl reboot ;;
+  "Logout") i3-msg exit ;;
 esac
 

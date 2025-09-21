@@ -1,0 +1,19 @@
+
+-- return {
+--   {
+--     "folke/lazy.nvim",
+--     init = function()
+--       -- Make :Lazy floating window transparent
+--       vim.api.nvim_create_autocmd("FileType", {
+--         pattern = "lazy",
+--         callback = function()
+--           vim.schedule(function()
+--             vim.cmd("hi LazyNormal guibg=NONE ctermbg=NONE")
+--             vim.cmd("hi NormalFloat guibg=NONE ctermbg=NONE")
+--          -- vim.cmd("hi FloatBorder guibg=NONE ctermbg=NONE")
+--           end)
+--         end,
+--       })
+--     end,
+--   },
+-- }

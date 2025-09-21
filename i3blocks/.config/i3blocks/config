@@ -1,0 +1,16 @@
+
+[cpu]
+command=top -bn1 | grep "Cpu(s)" | awk '{print "CPU: " 100 - $8 "%"}'
+interval=5
+
+[mem]
+command=free -h | awk '/Mem:/ { print "RAM: " $3 "/" $2 }'
+interval=5
+
+[disk]
+command=df -h / | awk 'NR==2 {print "Disk: "$3 "/" $2}'
+interval=60
+
+[time]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1

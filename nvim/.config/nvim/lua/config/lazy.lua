@@ -26,5 +26,6 @@ require("lazy").setup({
   rocks = {
     enabled = false,
   },
+  change_detection = { notify = false },
 })
 require("config.keymaps")

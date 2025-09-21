@@ -21,11 +21,9 @@ return {
       desc = "Find by grepping in project directory"
     },
     {
-            "<leader><leader>",
-            function()
-                require("fzf-lua").buffers()
-            end,
-            desc = "[,] Find existing buffers",
-        }
+      "<leader>fb",
+      function() require("fzf-lua").buffers() end,
+      desc = "[,] Find existing buffers",
+    }
   }
 }

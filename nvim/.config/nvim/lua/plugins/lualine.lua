@@ -1,3 +1,4 @@
+-- Lualine --
 return{
   "nvim-lualine/lualine.nvim",
   event = "VeryLazy",
@@ -42,3 +43,5 @@ return{
     }
   end,
 }
+
+
