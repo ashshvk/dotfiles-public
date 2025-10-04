@@ -42,4 +42,3 @@ vim.opt.splitbelow = true      -- Open new horizontal splits below
 
 -- File handling
 vim.opt.backup = false         -- Disable backup files
-

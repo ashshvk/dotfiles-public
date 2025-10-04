@@ -10,7 +10,7 @@
     grey: #6c7086;
 
     width: 600;
-    font: "Hack Nerd Font 16";
+    font: "Cantarell 16";
 }
 
 element-text, element-icon , mode-switcher {
