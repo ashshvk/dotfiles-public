@@ -17,18 +17,10 @@ map("n", "<leader>l", ":Lazy<CR>")
 -- map("i", "<D-j>", "<Down>", { noremap = true })   -- Win + j = move down
 -- map("i", "<D-k>", "<Up>", { noremap = true })     -- Win + k = move u
 
--- fzf
--- vim.keymap.set("n", "<leader>ff", function() require("fzf-lua").files() end, { desc = "Find Files" })
--- map("n", "<leader>ff", "<cmd>FzfLua files<CR>", { desc = "Find Files" })
--- map("n", "<leader>/", "<cmd>FzfLua live_grep<CR>", { desc = "Live Grep" })
--- map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>", { desc = "Open Buffers" })
-
 -- tabs -- 
 map("n", "te", ":tabedit")
 
--- buffer --
-map("n", "<tab>", ":bnext<CR>", opts)
-map("n", "<s-tab>", ":bprev<CR>", opts)
+-- buffers --
 map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" }) 
 map("n", "<leader>bl", ":ls<CR>", { desc = "List buffers" })
 
