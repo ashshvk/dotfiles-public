@@ -1,12 +1,13 @@
 set $mod Mod4
 
-font pango:Hack Nerd Font 8 
+font pango:Hack Nerd Font 10 
 exec_always feh --bg-scale ~/Pictures/Wallpaper/japan-jade.jpg
 #exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom 
 
+#exec --no-startup-id ~/.local/bin/keyboard_setup.sh
+
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080
-#exec --no-startup-id xrandr --output eDP-1 --auto
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -39,7 +40,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start rofi
-bindsym Mod1+space exec --no-startup-id rofi -show drun 
+bindsym $mod+d exec --no-startup-id rofi -show drun 
 #bindsym Mod1+space exec --no-startup-id rofi -show drun -themes ~/.config/rofi/themes/cat.rasi
 
 # change focus
@@ -171,7 +172,7 @@ for_window [class=".*"] border pixel 0
 #hide_edge_borders both
 
 #Powermenu
-bindsym Mod1+e exec ~/.config/rofi/powermenu.sh
+bindsym $mod+q exec ~/.config/rofi/powermenu.sh
 
 #Screenshot
 bindsym $mod+Shift+s exec --no-startup-id maim ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png && notify-send "Screenshot Taken" "Saved as screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png"

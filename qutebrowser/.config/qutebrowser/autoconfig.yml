@@ -11,6 +11,6 @@ settings:
   statusbar.show:
     global: always
   tabs.position:
-    global: top
+    global: left
   tabs.show:
     global: multiple
