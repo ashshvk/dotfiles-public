@@ -8,6 +8,8 @@ config_version: 2
 settings:
   content.blocking.method:
     global: adblock
+  hints.chars:
+    global: qwertyuiop
   statusbar.show:
     global: always
   tabs.position:
