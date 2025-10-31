@@ -8,6 +8,8 @@ config_version: 2
 settings:
   content.blocking.method:
     global: adblock
+  content.javascript.clipboard:
+    https://github.com: none
   hints.chars:
     global: qwertyuiop
   statusbar.show:

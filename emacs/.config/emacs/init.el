@@ -1,4 +1,4 @@
-(load "~/.emacs.d/config.el")
+(load "~/.config/emacs/config.el")
 ;;; -*- lexical-binding: t -*-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

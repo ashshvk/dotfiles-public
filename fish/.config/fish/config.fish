@@ -2,17 +2,21 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set -g fish_greeting ""
+
 # Set environment variables
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx PATH $HOME/.local/bin $PATH
-set -U fish_user_paths ~/devel/flutter/bin $fish_user_paths
 
 # Aliases
 alias ls 'eza -l -h -g -o --git --icons'
 alias ll 'ls -a'
-alias g git
 alias vim nvim
+alias kana 'sudo /home/saber/.cargo/bin/kanata --cfg /home/saber/.local/bin/kanata.kbd'
+
+# Git alias
+
 
 # Starship
 starship init fish | source
@@ -28,7 +32,6 @@ function zf --description 'Use zoxide + fzf to jump to a directory'
     end
 end
 
-set -g fish_greeting ""
 
 # yazi
 function y
