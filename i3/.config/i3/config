@@ -2,7 +2,6 @@ set $mod Mod4
 
 font pango:Hack Nerd Font 10 
 exec_always feh --bg-scale ~/Pictures/Wallpaper/japan-jade.jpg
-#exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom 
 
 #exec --no-startup-id ~/.local/bin/keyboard_setup.sh
