@@ -3,6 +3,7 @@ local opts = { noremap = true, silent = true }
 
 -- Explorer
 map("n", "<leader>pv", ":Ex<CR>")
+map("n", "<leader>vp", ":Rex<CR>")
 map("n", "<leader>ch", "<cmd>checkhealth<CR>")
 
 -- move visual line --
