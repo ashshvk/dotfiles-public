@@ -11,8 +11,8 @@ vim.opt.number = true          -- Show absolute line numbers
 vim.opt.relativenumber = true  -- Show relative line numbers
 
 -- Tabs & Indentation
-vim.opt.tabstop = 2            -- Number of spaces per tab
-vim.opt.shiftwidth = 2         -- Number of spaces per auto-indent
+vim.opt.tabstop = 4            -- Number of spaces per tab
+vim.opt.shiftwidth = 4         -- Number of spaces per auto-indent
 vim.opt.expandtab = true       -- Convert tabs to spaces
 vim.opt.smartindent = true     -- Enable smart indentation
 vim.opt.autoindent = true      -- Copy indentation from the previous line
