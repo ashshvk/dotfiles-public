@@ -1,6 +1,7 @@
 set $mod Mod4
 
-font pango:Hack Nerd Font 10 
+font pango:UbuntuMono Nerd Font 14
+
 exec_always feh --bg-scale ~/Pictures/Wallpaper/japan-jade.jpg
 exec_always --no-startup-id picom 
 
@@ -176,6 +177,7 @@ bindsym $mod+q exec ~/.config/rofi/powermenu.sh
 #Screenshot
 bindsym $mod+Shift+s exec --no-startup-id maim ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png && notify-send "Screenshot Taken" "Saved as screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png"
 bindsym Ctrl+Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+s exec --no-startup-id maim -s ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png && notify-send "Screenshot Taken" "Saved as screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png"
 
 # keymap Kanata
 #exec --no-startup-id kanata --cfg ~/.config/kanata/kanata.kbd
