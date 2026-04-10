@@ -42,3 +42,6 @@ vim.opt.splitbelow = true      -- Open new horizontal splits below
 
 -- File handling
 vim.opt.backup = false         -- Disable backup files
+
+vim.opt.conceallevel = 1
+vim.opt.concealcursor = "nc"
