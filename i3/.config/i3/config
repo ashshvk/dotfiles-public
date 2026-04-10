@@ -1,7 +1,6 @@
 set $mod Mod1
 
 font pango:UbuntuMono Nerd Font 14
-
 exec_always feh --bg-scale ~/Pictures/Wallpaper/Watchtower.png
 exec_always --no-startup-id picom 
 
