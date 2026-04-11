@@ -11,6 +11,20 @@ return {
                 path = "~/Documents/Notes",
             },
         },
+        templates = {
+            folder = "Templates",
+            date_format = "%Y-%m-%d",
+            time_format = "%H:%M",
+        },
+        {
+  note_id_func = function(title)
+    if title ~= nil then
+    return title:gsub(" ", "-"):lower()
+  else
+    return tostring(os.time())
+  end
+  end,
+},
         ui = {
             enable = true,
         },
