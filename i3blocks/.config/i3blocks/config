@@ -10,6 +10,12 @@ interval=5
 command=df -h -H / | awk 'NR==2 {print "Disk: "$3 "/" $2}'
 interval=60
 
+[volume]
+command=pactl get-sink-volume @DEFAULT_SINK@ | awk '{print "VOL: "$5}' | head -n1
+interval=1
+signal=1
+
 [time]
 command=date '+%c'
 interval=1
+

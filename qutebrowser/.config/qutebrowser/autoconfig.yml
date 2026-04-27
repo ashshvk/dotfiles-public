@@ -13,8 +13,8 @@ settings:
   hints.chars:
     global: qwertyuiop
   statusbar.show:
-    global: always
+    global: never
   tabs.position:
-    global: left
+    global: top
   tabs.show:
     global: multiple

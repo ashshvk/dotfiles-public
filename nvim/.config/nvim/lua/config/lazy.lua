@@ -16,7 +16,7 @@ require("config.options")
 require("lazy").setup({
 	spec = {
 		{import = "plugins"},
-    {import = "plugins.colorscheme"}
+    --{import = "plugins.colorscheme"}
 	},
 	 checker = {
     enabled = true, -- check for plugin updates periodically
@@ -28,4 +28,5 @@ require("lazy").setup({
   },
   change_detection = { notify = false },
 })
+
 require("config.keymaps")

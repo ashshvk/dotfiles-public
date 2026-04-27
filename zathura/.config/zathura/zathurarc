@@ -1,9 +1,13 @@
+# Enable dark mode
 set recolor           true
-set recolor-lightcolor "#000000"   # Background color
-set recolor-darkcolor  "#ffffff"   # Text color
 
-
-#set recolor-lightcolor "#ffffff"
-#set recolor-darkcolor  "#000000"
-
+# This is the important one (prevents image inversion)
 set recolor-keephue true
+
+# Kepp blacks truly black (better contrast)
+set recolor-lightcolor "#000000" 
+
+# Light text (not pure white = easier on eyes)
+set recolor-darkcolor "#e6e6e6"
+
+set highlight-transparency 0.3

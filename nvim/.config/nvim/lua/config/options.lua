@@ -30,7 +30,6 @@ vim.opt.wrap = false           -- Disable line wrapping
 vim.opt.clipboard = "unnamedplus" -- Use system clipboard
 
 --Options
-vim.opt.wrap = false           -- vim.opt.cmdheight = 1        
 vim.opt.cmdheight = 1          -- Height of the command bar
 vim.opt.scrolloff = 8          -- Keep at least 10 lines above/below the cursor
 
