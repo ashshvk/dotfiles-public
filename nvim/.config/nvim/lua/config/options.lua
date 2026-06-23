@@ -25,6 +25,8 @@ vim.opt.ignorecase = true      -- Ignore case in searches
 -- Appearance
 vim.opt.termguicolors = true   -- Enable true color support
 vim.opt.wrap = false           -- Disable line wrapping
+vim.opt.colorcolumn = "80"       -- enable line width control
+vim.opt.textwidth = 80
 
 -- Clipboard
 vim.opt.clipboard = "unnamedplus" -- Use system clipboard

@@ -1,7 +1,7 @@
 set $mod Mod4
 
 font pango:UbuntuMono Nerd Font 12
-exec_always feh --bg-fill ~/Pictures/Wallpaper/3-osaka-jade-bg.jpg
+exec_always feh --bg-fill ~/Pictures/Wallpaper/japan-jade.jpg
 exec_always --no-startup-id picom 
 
 #exec --no-startup-id ~/.local/bin/keyboard_setup.sh
@@ -172,7 +172,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #lockscreen
-bindsym --release $mod+Shift+x exec "i3lock"
+bindsym --release $mod+Shift+x exec "i3lock -i ~/Pictures/Wallpaper/girl.png -c 000000 -u"
 
 #Powermenu
 bindsym $mod+q exec ~/.config/rofi/powermenu.sh
@@ -234,4 +234,5 @@ gaps outer 5
 hide_edge_borders both
 smart_gaps on
 
-
+# rmpc start
+bindsym $mod+m exec kitty -e rmpc
