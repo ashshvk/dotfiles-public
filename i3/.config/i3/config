@@ -201,7 +201,6 @@ bindsym $mod+Shift+z exec --no-startup-id bash -c "i3lock && systemctl suspend"
 default_border pixel 2
 default_floating_border pixel 2
 
-# --- Solarized Osaka (approx for i3) ---
 
 # --- Tokyo Night i3 colors ---
 
